@@ -56,22 +56,45 @@
       </svg>
     </button>
     <strong class="form-modal">Оставьте свои данные, мы вам перезвоним</strong>
-    <form class="field-set">
-      <label class="form-label"> Имя
-        <input type="text" name="name">
+    <form class="field-set" autocomplete="off">
+      <label class="form-label"> 
+        <span class="title-label">Имя</span>
+        <span class="input2">
+        <input class="textinp" type="text" name="name" autofocus>
+        <svg class="inp-svg" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-person"></use>
+        </svg>
+      </span>
+    </label>
+      <label class="form-label"> 
+        <span class="title-label">Телефон</span>
+        <span class="input2">
+        <input class="textinp" type="tel" name="tel">
+        <svg class="inp-svg" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-phone-black"></use>
+        </svg>
+        </span>
       </label>
-      <label class="form-label"> Телефон
-        <input type="tel" name="tel">
+      <label class="form-label"> 
+        <span class="title-label">Почта</span>
+        <span class="input2">
+        <input class="textinp" type="email" name="email">
+        <svg class="inp-svg" width="18px" height="18px">
+          <use href="./images/symbol-defs.svg#icon-email1"></use>
+        </svg>
+        </span>
       </label>
-      <label class="form-label"> Почта
-        <input type="email" name="email">
+      <label class="form-label textarea"> 
+        <span class="title-label">Комментарии</span>
+        <textarea class="textarea1" name="textarea" rows="5" placeholder="Введите текст"></textarea>
       </label>
-      <label class="form-label textarea"> Комментарии
-        <textarea name="textarea" rows="5" placeholder="Введите текст"></textarea>
-      </label>
-      <label class="form-label checkbox"> 
-        <p>Соглашаюсь с рассылкой и принимаю <span>Условия договора</span></p>
-        <input type="checkbox" name="checkbox" value=""> 
+      <label class="form-label-checkbox"> 
+        <input class="check" type="checkbox"> 
+        <svg class="inp-svg1" width="11px" height="8px">
+          <use href="./images/symbol-defs.svg#icon-checkbox"></use>
+        </svg>
+        <span class="text-terms">Соглашаюсь с рассылкой и принимаю <a class="www" href="#" target="_blank"
+            rel="noopener noreferrer">Условия договора</a></span>
       </label>
       <button class="send-btn">Отправить</button>
     </form>
